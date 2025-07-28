@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Rajnish Chaudhary">
+    <meta name="description" content="Portfolio of member">
+    <title>Rajnish Chaudhary</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+         /*Outer container*/
+        .container {
+            max-width: 100%;
+            margin: 20px ;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /*div for image and text*/
+        .aboutbox {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .about {
+            flex: 1;
+        }
+        .imagebox {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-left: 20px;
+        }
+        /*Selector for img inside imagebox*/
+        .imagebox img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .description {
+            margin-bottom: 20px;
+        }
+        /*Class and its selected elements*/
+        .cvheading h2, h3 {
+            margin: 10px;
+            padding: 5px;
+        }
+        .cvheading h2 {
+            font-size: 36px;
+            color: #333;
+        }
+        .cvheading h3 {
+            font-size: 24px;
+            color: rgb(51, 51, 51);
+        }
+        .info p, ul {
+            margin: 10px;
+            padding: 5px;
+            line-height: 1.6;
+        }
+        .info {
+            font-size: 16px;
+            color: #4f4f4f;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header section -->
+    <section id="header">
+        <!-- Logo -->
+        <a href="#"><img src="/images/home.jpg" width="20%" height="20%" class="logo" alt=""></a>
+        <!-- Navigation -->
+        <div>
+            <ul id="navbar">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/product.html">Product</a></li>
+                <li><a href="/pages/blog.html">Blog</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/research.html">Research</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="container">
+        <section>
+            <div class="aboutbox">
+                <div class="about">
+                    <h2>Rajnish Chaudhary</h2>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="imagebox">
+                    <img src="/CV/rajnish.JPG" alt="Rajnish Chaudhary">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="description">
+                <h3 class="cvheading">About</h3>
+                <ul class="info"><li>Rajnish has a very strong will to learn new skills and techniques. 
+                    He seeks help from his colleagues and peers to enhance his skills. Rajnish actively 
+                    participates in events to gain more knowledge. His goal is to bring prosperity to the field of technology.</li></ul>
+            </div>
+            <div class="description">
+                <h3 class="cvheading">Education</h3>
+                <ul class="info">
+                    <li>Bachelor's degree in Computing <span style="font-weight: bold;">( BSc (Hons) Computing )</span>, London Metropolitan University (Expected Graduation: 2027)</li>
+                </ul>
+                <h3 class="cvheading">Skills</h3>
+                <ul class="info">
+                    <li>Familiarity with HTML, CSS, and JavaScript, which are tools used in web development.</li>
+                    <li>Understanding in programming languages like Java.</li>
+                    <li>Analytical and problem-solving skills.</li>
+                    <li>Ability to work effectively and efficiently in team projects.</li>
+                </ul>
+                <h3 class="cvheading">Projects</h3>
+                <ul class="info">
+                    <li>Created an online grocery shopping website with functional web pages.</li>
+                </ul>
+                <h3 class="cvheading">Contact</h3>
+                <ul class="info"><li>Email: rajnish@example.com</li></ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img id="icon" src="/images/home.jpg" width="8%" height="5%" class="logo" alt="">
+        </div>
+    <div class="last">
+            <!-- Contact details -->
+        <div class="details">
+                <p><strong>Address:</strong>+P97, Lainchaur Marg 26,</p>
+                <p>Kathmandu 44600, Nepal</p>
+                <br>
+                <p>
+
+            <strong>Phone:</strong>(01) 420 271</p>
+          <br>
+          <p><strong>Email:</strong>groceriesnepal@gmail.com</p>
+        </div>
+        <div class="d2">
+            <h4 style="font-size: large;">Details</h4>
+            
+            <a href="/pages/about.html">About us </a>
+            <a href="/pages/product.html">Our products </a>
+            <a href="/pages/blog.html"> Blog </a>
+            <a href="/pages/research.html">Research page </a>
+        </div>
+        <div class="column2">
+            <h4>Privacy</h4>
+            <h4>Terms</h4>
+            <h4>FAQs</h4>
+            <h4>Security</h4>
+            <h4>Mobile</h4>
+            <h4>Contact</h4>
+          </div>
+          <div class="column3">
+            <h4>Partner</h4>
+            <h4>Seller</h4>
+            <h4>Warehouse</h4>
+            <h4>Deliver</h4>
+            <h4>Resources</h4>
+            <h4>Express</h4>
+          </div>
+          <div class="column4">
+            <h2 style="color: blueviolet;">Stay connected</h2>
+            <p>Facebook:groceriesNepal</p>
+            <p>Instagram:groceries_NEPAL</p>
+          </div>
+    </div>
+    </footer>
+</body>
+</html>

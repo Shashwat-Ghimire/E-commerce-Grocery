@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Shashwat Ghimire">
+    <meta name="description" content="About the website and team">
+    <title>About</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/script.js"></script>
+    <style>
+    /*Styling in introduction 'About box'*/
+    .aboutbox {
+        height: 250px;
+        text-align: right;
+        display: flex;
+        background-color: rgb(217, 247, 199);
+        margin-bottom: 40px;
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    #aboutimg {
+        box-shadow: 0 0 20px black;
+    }
+
+    .aboutimgbox {
+        height: 100%;
+        width: 60%;
+    }
+
+    .aboutimgbox img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .infoabout {
+        text-align: left;
+        
+        margin-left: 40px;
+    }
+    /*Styling in the product button in the div*/
+    #productbut {
+        border-style: none;
+        border-radius: 4px;
+        border-color: darkgreen;
+        background-color: darkgreen;
+        text-align: center;
+        padding: 5px;
+        width: 100px;
+        height: 40px;
+        font-weight: bold;
+        text-shadow: 0 0 2px black;
+        color: white;
+        margin-top: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0 0 4px #0A653C;
+        transition: background-color;
+        cursor: pointer;
+    }
+    /*Hover Affect in the button*/
+    #productbut:hover {
+        background-color: #023b22;
+    }
+    /*Styling in story section*/
+    .storybox {
+        height: 400px;
+        display: flex;
+    }
+
+    .storyimg {
+        margin-right: 20px;
+        margin-left: 40px;
+        padding: 10px;
+    }
+
+    .storyimg img { /*Selector for the image specifically*/
+        margin-left: 0;
+        width: 500px;
+        height: 300px;
+        border-radius: 12px;
+        align-self: flex-end;
+        box-shadow: 0 0 6px black;
+    }
+
+    .story {
+        text-align: left;
+        padding: 50px;
+    }
+
+    .story p {
+        text-align: justify;
+    }
+    /*Styling in the mission section*/
+    .mission {
+        text-align: center;
+        background-color: white;
+        margin-right: 25%;
+        margin-left: 25%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    #missionh4 {
+        font-weight: bolder;
+        font-size: larger;
+    }
+
+    #missionp {
+        font-size: 16px;
+        text-align: center;
+        padding: 20px;
+        word-spacing: 2px;
+    }
+
+    .missionimg {
+        padding: 10px;
+    }
+
+    .missionimg img { /*Selector for mission image specifically*/
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 0 0 10px black;
+        border-radius: 16px;
+    }
+    /*Styling in the team info div*/
+    .infoteambox {
+        display: block; /*Displays items in block style*/
+        margin-top: 60px;
+        margin-bottom: 2px;
+        padding: 40px;
+        text-align: center;
+    }
+
+    #infoteam {
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    #capteam {
+        font-size: 16px;
+    }
+
+    .portfoliobox {
+        height: 400px;
+        display: flex; /*Displays items in flex manner*/
+        margin-bottom: 40px;
+        background-color: powderblue;
+        padding: 10px;
+    }
+
+    .portfolio {
+        background-color: whitesmoke;
+        width: calc(25% - 10px); /*Evenly distribute the spaces between the protfolio div inside the portfoliobox div, 25% is the width of the box and 10px is the margin between the boxes*/
+        margin: 20px; /*Margin to manage the space between the boxes and the outerdiv*/
+        text-align: center;
+    }
+
+    .image {
+        width: 175px;
+        height: 175px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        transition: box-shadow 0.4s ease-in-out; /*Transition for glow effect with the box-shadow*/
+    }
+
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .aboutmem {
+        text-align: center;
+        display: block;
+        padding: 10px;
+    }
+
+    /*Glow effect triggered by hover action in different images of the members*/
+    #shashwat:hover {
+        box-shadow: 0 0 10px blue;
+    }
+
+    #nabin:hover {
+        box-shadow: 0 0 10px purple;
+    }
+
+    #megha:hover {
+        box-shadow: 0 0 10px red;
+    }
+
+    #rajnish:hover {
+        box-shadow: 0 0 10px orange;
+    }
+
+    /*Styling in the small message section*/ 
+    .message {
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #caption {
+        text-align: center;
+        font-size: 12px;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+    /*A container for the form*/
+    .formbox {
+        width: 60%; /*60% of the page*/
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid whitesmoke;
+        border-radius: 5px;
+        background-color: whitesmoke;
+        margin-bottom: 20px;
+    }
+
+    #formheading {
+        color: black;
+        text-align: center;
+        text-shadow: 0 0 1px black;
+        margin-bottom: 20px;
+    }
+
+    /*Selector for all the labels in the form*/
+    form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /*Selector for input and its types*/
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        box-sizing: border-box; 
+        resize: none;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    /*Selector for the input type submit [button]*/
+    input[type="submit"] {
+        width: 10%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: slateblue;
+        color: white;
+        cursor: pointer;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+     /*hover effect on the submit button*/
+    input[type=submit]:hover {
+        background-color: blue;
+    }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <section id="header">
+        <!-- Logo -->
+        <a href="#"><img src="/images/home.jpg" width="20%" height="20%" class="logo" alt=""></a>
+        <!-- Navigation -->
+        <div>
+            <ul id="navbar">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/product.html">Product</a></li>
+                <li><a href="/pages/blog.html">Blog</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/research.html">Research</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--About-->
+    <section>
+        <div class="aboutbox">
+            <div class="aboutimgbox">
+                <img src="/images/grocery.jpg" alt="Background" id="aboutimg">
+            </div>
+            <div class="infoabout">
+                <h5 id="abouth5">ABOUT</h5>
+                <br>
+                <h2 id="abouth2">Our commitment lies in providing you with an excellent range of fresh produce and essential pantry goods, 
+                    all accessible with a simple click.</h2><br>
+                <p id="aboutp">The perfect grocery online store to find and shop what reaches your table. Click the button below to shop now.</p><br>
+                <a href="/pages/product.html">
+                <button id="productbut">SHOP NOW!</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Story-->
+    <section>
+        <div class="storybox">
+            <div class="story">
+            <h5>WHAT ARE WE?</h5><br>
+            <h2>The idea of groceriesnepal.</h2><br>
+            <p>
+                Nobody likes a long queues and having limited choices to choose from, so to reduce this frustration we as a team developed our website
+                to make it convinient for people to shop their groceries from their home. 
+                Our website prioritizes the local retailers, producers and farmers to be a reliable choice for the people who are seeking
+                simplicity and also quality.  
+            </p>
+            </div>
+            <div class="storyimg">
+                <img src="/images/queue.jpg" alt="queue">
+            </div>
+        </div>
+    </section>
+
+    <!--Mission-->
+    <section>
+        <div class="mission">
+            <h4 id="missionh4">WHAT WE ARE TRYING TO ACHIEVE</h4>
+           <p id="missionp">
+            At groceriesnepal, we are looking forward to providing people with simple but effective 
+            way to get quality ingredients, 
+            make the search for high-quality items easier and 
+            reduce the limitation on the choices of products so that the people can enjoy looking 
+            for products and not be annoyed at long queues and lack of choices.
+            </p>
+            <div class="missionimg">
+                <img src="/images/Grocery5.jpg" alt="Online Shopping" id="misimg">
+            </div>
+        </div>
+        
+            
+    </section>
+
+    <!--small desc-->
+    <section>
+        <div class="infoteambox">
+            <h5 id="infoteam">MEET OUR TEAM</h5>
+            <h6 id="capteam">The people who developed this website</h6>
+            <p id="caption">Click the picture of a member to view their portfolio.</p>
+        </div>
+    </section>
+
+    <!--portfolio-->
+    <section>
+    <div class="portfoliobox">
+        <div class="portfolio">
+            <div class="image" id="shashwat">
+                <a href="/CV/shashwat.html">
+                <img src="/CV/Shashwat.jpg" alt="Shashwat Ghimire" >
+                </a>
+            </div>
+            <div class="aboutmem">
+                <h3 class="membername">
+                    Shashwat Ghimire
+                </h3>
+                <h5 class="role">
+                    Team Leader
+                </h5>
+            </div>
+        </div>
+
+        <div class="portfolio">
+            <div class="image" id="nabin">
+                <a href="/CV/nabin.html">
+                <img src="/CV/nabin.jpg" alt="Nabin Singh Bhandari" >
+                </a>
+            </div>
+            <div class="aboutmem">
+                <h3 class="membername">
+                    Nabin Singh Bhandari
+                </h3>
+            </div>
+        </div>
+
+        <div class="portfolio">
+            <div class="image" id="megha">
+                <a href="/CV/megha.html">
+                <img src="/CV/megha.jpeg" alt="Megha Aryal" >
+                </a>
+            </div>
+            <div class="aboutmem">
+                <h3 class="membername">
+                    Megha Aryal
+                </h3>
+            </div>
+        </div>
+
+        <div class="portfolio">
+            <div class="image" id="rajnish">
+                <a href="/CV/rajnish.html">
+                <img src="/CV/rajnish.JPG" alt="Rajish Chaudhary" >
+                </a>
+            </div>
+            <div class="aboutmem">
+                <h3 class="membername">
+                    Rajnish Chaudhary
+                </h3>
+                
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section>
+        <div class="message">
+            <p id="messagep">
+                We are constantly looking forward to your feedbacks so that we can provide you with more features and upgrades to bring
+                to our website in order to boost your morale while using our website. Your few words can make a great change.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="formbox">
+            <form class="feedbackform" name="FeedBackForm" onsubmit="validation()">
+                <h2 id="formheading">
+                    Help Us Improve!
+                </h2>
+                <label for="Fname">
+                    Name: <br><input type="text" name="Name" id="Name" placeholder="Your name">
+                </label>
+                <br>
+                <label for="Phone">
+                    Phone: <br><input type="text" name="Phone" id="Phone" placeholder="Phone Number">
+                </label>
+                <br>
+                <label for="email">
+                    Email: <br><input type="email" name="Email" id="email" placeholder="xyz123@domain.com">
+                </label>
+                <br>
+                <label for="message"> Feedback:
+                    <br><textarea name="Message" id="message" placeholder="Feedback" rows="10" cols="10"></textarea>
+                </label>
+                <br>
+                <input type="submit" value="Submit">
+            </form> 
+        </div>
+    </section>
+    
+    
+    <footer>
+        <div class="logo">
+            <img id="icon" src="/images/home.jpg" width="8%" height="5%" class="logo" alt="">
+        </div>
+        <div class="last">
+            <!-- Contact details -->
+            <div class="details">
+                <p><strong>Address:</strong>+P97, Lainchaur Marg 26,</p>
+                <p>Kathmandu 44600, Nepal</p>
+                <br>
+                <p>
+
+            <strong>Phone:</strong>(01) 420 271</p>
+          <br>
+          <p><strong>Email:</strong>groceriesnepal@gmail.com</p>
+        </div>
+        <div class="d2">
+            <h4 style="font-size: large;">Details</h4>
+            
+            <a href="/pages/about.html">About us </a>
+            <a href="/pages/product.html">Our products </a>
+            <a href="/pages/blog.html"> Blog </a>
+            <a href="/pages/research.html">Research page </a>
+        </div>
+        <div class="column2">
+            <h4>Privacy</h4>
+            <h4>Terms</h4>
+            <h4>FAQs</h4>
+            <h4>Security</h4>
+            <h4>Mobile</h4>
+            <h4>Contact</h4>
+        </div>
+        <div class="column3">
+            <h4>Partner</h4>
+            <h4>Seller</h4>
+            <h4>Warehouse</h4>
+            <h4>Deliver</h4>
+            <h4>Resources</h4>
+            <h4>Express</h4>
+        </div>
+        <div class="column4">
+            <h2 style="color: blueviolet;">Stay connected</h2>
+            <p>Facebook:groceriesNepal</p>
+            <p>Instagram:groceries_NEPAL</p>
+        </div>
+    </div>
+    </footer>  
+</body>
+</html>

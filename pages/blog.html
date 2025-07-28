@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Rajnish Chaudary">
+    <meta name="description" content="Blogs on different topics">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+      /* Typography */
+      h1{
+          margin-bottom: 16px;
+          color: #130f40;
+          text-align: center;
+      }
+
+      .blogheading h2 {
+          margin-bottom: 16px;
+          color: #130f40;
+      }
+
+      .blogparagraph p {
+          margin-bottom: 24px;
+          color: #333;
+      }
+
+      /* Blog Section */
+
+      .heading {
+          margin: 30px;
+          font-size: 48px;
+          color: #130f40;
+      }
+
+      .heading span {
+          background: #28a745;
+          color: #fff;
+          padding: 8px 16px;
+          border-radius: 8px;
+      }
+
+      .box-Container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+          gap: 32px;
+      }
+
+      .box {
+          background-color: #fff;
+          border: 1px solid #e0e0e0;
+          border-radius: 8px;
+          padding: 32px;
+          transition: all 0.3s ease;
+      }
+
+      .box:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .box img {
+          max-width: 100%;
+          height: auto;
+          border-bottom: 1px solid #e0e0e0;
+          padding-bottom: 16px;
+          margin-bottom: 16px;
+      }
+
+      .content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 16px;
+      }
+
+
+      .btn {
+          display: inline-block;
+          padding: 8px 16px;
+          font-size: 19.2px;
+          color: #fff;
+          background-color: #28a745;
+          border: none;
+          border-radius: 4.8px;
+          cursor: pointer;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+          background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section -->
+    <section id="header">
+      <!-- Logo -->
+      <a href="#"><img src="/images/home.jpg" width="20%" height="20%" class="logo" alt=""></a>
+      <!-- Navigation -->
+      <div>
+          <ul id="navbar">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/pages/product.html">Product</a></li>
+              <li><a href="/pages/blog.html">Blog</a></li>
+              <li><a href="/pages/about.html">About</a></li>
+              <li><a href="/pages/research.html">Research</a></li>
+          </ul>
+      </div>
+    </section>
+    <section class="blogs" id="blogs">
+      <h1 class="heading">Effects of <span>Technology</span></h1>
+      <div class="box-Container">
+        <div class="box">
+          <img src="/blogs/about technology.png" alt="">
+          <div class="content">
+             </div>
+          <h2 class="blogheading">About technology</h2>
+          <p class="blogparagraph"> The technology is refered as the practical application and implementation of scientific knowledge, particularly in commerce and industry. It includes a wide range of frameworks, instruments, and devices that increase productivity, boost human potential, and solve problems. Technology has permeated every aspect of daily life in the modern world, impacting a wide range of industries like retail, healthcare, education, transportation, and communication. Rapi... 
+          </p>
+          <a href="/blogs/aboutTechnology.html" class="btn">Read more</a> 
+        </div>
+        <div class="box">
+          <img src="/blogs/positive effect.png" alt="">
+          <div class="content">
+            </div>
+          <h2 class="blogheading">Positive Impact</h2>
+          <p class="blogparagraph">Technology has completely changed bringing in a new era of ease and effectiveness because of how customers and retailers engage in the food industry. In terms of efficiency, this has one of the greatest advantages for the grocery. Many operations have been designed via automation and innovative software, greatly lowering the amount of manual work and error-proneness. Technology has enabled grocery businesses to run more effectively, from inventory management...
+          </p>
+          <a href="/blogs/positive.html" class="btn">Read more</a> 
+        </div>
+
+        <div class="box">
+          <img src="/blogs/negative1.webp" alt="">
+          <div class="content">
+            </div>
+          <h2 class="blogheading">Negative Impact</h2>
+          <p class="blogparagraph">Although we know everythings have the two sides in the same way technology has clearly improved the grocery business in many ways, there are disadvantages and difficulties associated with it as well. The possibility of employment is among the most urgent worries. The pervasiveness of artificia intelligence and artificial intelligence in grocery business poses a significant risk to employment, especially for positions...
+          </p>
+          <a href="/blogs/negative.html" class="btn">Read more</a> 
+        </div>
+
+        <div class="box">
+          <img src="/blogs/introduction.png" alt="">
+          <div class="content">
+            </div>
+          <h2 class="blogheading">
+            How technology has affected daily life and business while selling
+            grocery items
+          </h2>
+          <p class="blogparagraph"> The incorporation of technology into the grocery industry has resulted in significant transformations, impacting consumers' daily lives as well as retailers' business operations. The ease of accessibility  and use that online shopping platforms provide to customers is among the most evident effects. People can now explore, choose, and buy groceries from the homes which made convenience or while on the go thanks to the growth of e-commerce websites and developments and smartphone...
+          </p>
+          <a href="technologyEffect.html" class="btn">Read more</a> <!-- Change the # to link the page with the blog -->
+        </div>
+
+        <div class="box">
+          <img src="/blogs/conclusion.png" alt="">
+          <div class="content">
+            </div>
+          <h2 class="blogheading">Overall Conclusion</h2>
+          <p class="blogparagraph"> 
+            In conclusion, the launching and development of a grocery store's e-commerce website shows the significant impact of technology on modern businesses and consumer behavior. The grocery business has experienced a lot of change with the introduction of cutting-edge technology, including online shopping platforms option, data analytics, and supply chain optimization systems...
+          </p>
+          <a href="/blogs/conclusion.html" class="btn">Read more</a> <!-- Change the # to link the page with the blog -->
+        </div>
+      </div>
+    </section>
+    <br><br>
+    <footer>
+      <div class="logo">
+          <img id="icon" src="/images/home.jpg" width="8%" height="5%" class="logo" alt="">
+      </div>
+      <div class="last">
+          <!-- Contact details -->
+          <div class="details">
+              <p><strong>Address:</strong>+P97, Lainchaur Marg 26,</p>
+              <p>Kathmandu 44600, Nepal</p>
+              <br>
+              <p>
+
+          <strong>Phone:</strong>(01) 420 271</p>
+        <br>
+        <p><strong>Email:</strong>groceriesnepal@gmail.com</p>
+      </div>
+      <div class="d2">
+          <h4 style="font-size: large;">Details</h4>
+          
+          <a href="/pages/about.html">About us </a>
+          <a href="/pages/product.html">Our products </a>
+          <a href="/pages/blog.html"> Blog </a>
+          <a href="/pages/research.html">Research page </a>
+      </div>
+      <div class="column2">
+          <h4>Privacy</h4>
+          <h4>Terms</h4>
+          <h4>FAQs</h4>
+          <h4>Security</h4>
+          <h4>Mobile</h4>
+          <h4>Contact</h4>
+      </div>
+      <div class="column3">
+          <h4>Partner</h4>
+          <h4>Seller</h4>
+          <h4>Warehouse</h4>
+          <h4>Deliver</h4>
+          <h4>Resources</h4>
+          <h4>Express</h4>
+      </div>
+      <div class="column4">
+          <h2 style="color: blueviolet;">Stay connected</h2>
+          <p>Facebook:groceriesNepal</p>
+          <p>Instagram:groceries_NEPAL</p>
+      </div>
+    </div>
+    </footer>  
+  </body>
+</html>

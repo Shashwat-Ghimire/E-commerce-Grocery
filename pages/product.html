@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Nabin Singh Bhandari">
+    <meta name="description" content="Products">
+    <title>Product</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/script.js" defer></script>
+<style>
+        #statement{
+        display: flex;
+        flex-direction: column;
+        padding: 8%;
+        text-align: left;
+        background-image: url("/images/newbg3.jpg");
+        height: 80vh;                   /* Sets the height of the element to 80% of the viewport height(window scrren shown) */
+        width: 100%;
+        background-size: cover;
+    }
+    
+
+    
+
+    #product {
+        text-align: center;
+    }
+    #product .p1 {
+        background-color: white;
+        width: 24%;
+        max-width: 25%;
+        margin: 15px 0;
+        border-radius: 25px;
+    }
+    .procontainer{    /*class of outerdiv containg all products */
+    background-color: azure;
+    height: 50%;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 0%;
+    
+    
+    }
+    #product .des{
+        text-align: center;
+        font-size: small;
+    }
+    .procontainer{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 3%;
+        flex-wrap: wrap;
+    }
+    #prodetails{
+        display: flex;
+        margin-top: 20px;
+    }
+    #prodetails .imgsection{                /*targets image part */
+    width: 40%;
+    height: 500px;
+    margin-right:50px ;
+    padding: 125px;
+    }
+    #prodetails .single-product-detail{     /*targets product's descring part*/
+        width: 50%; 
+        padding-top: 150px;
+    
+        
+
+    }
+    #prodetails .single-product-detail h4{
+        padding-top: 40px 0 20px 0;
+
+    }
+    #prodetails .single-product-detail h2{
+    font-size: 26px;
+
+    }
+    #prodetails .single-product-detail button{
+    background: #088178;
+    color: white;
+
+    }
+    #prodetails .single-product-detail span{
+        line-height:30px ;
+    }
+    #product .procontainer a{
+        text-decoration: none;
+    }
+    .p1{ border: 4px solid wheat;
+        
+    }
+
+    .p1:hover{
+        border: 5px solid rgb(117, 156, 41)
+    }
+
+    #banner{
+        display: flex;
+    flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-image: url(/images/banner.jpg);
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+        background-position: center;
+        }
+    button{      /*to design all button*/
+        font-size: 14px;
+        font-weight: 500;
+        padding: 5px 8px;
+        color: white;
+        background-color:brown;
+        border-radius: 3px;
+        cursor: pointer;
+        border: 1px;
+        outline: auto;
+    }
+    button:hover{
+        background: green;
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+    <section id="header"> 
+        
+     <a href="#"><img src="/images/home.jpg" width="20%" height="20%" class="logo" alt="">
+     </a>
+        
+         
+        <div>
+            <ul id="navbar">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/product.html">Product</a></li>
+                <li><a href="/pages/blog.html">Blog</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/research.html">Research</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="statement"  >
+        <h1 style="margin: 1%;font-size: 40px;">Stay home</h4>
+        <p style="margin: 1%;font-size: 25px;">NOW! GET 25% OFF ON ALL ITEM</p>
+        <a style="margin: 1%;" href="/pages/product.html"><button >Shop Now</button></a>
+        
+         
+
+    </section> 
+    
+    <section id="product">   <!--section for products -->
+
+        
+         <div class="procontainer"> <!--outer div that contain all products-->
+            <div class="p1">       <!-- inner div for product 1 -->
+                <a href="/product/pdescriptioncoffee.html">
+
+                <img src="/product/product1.jpg" width="252px" style="background-color: antiquewhite;">
+                <div class="des">
+
+                    <h3>Nescafe</h3>
+                    <h2><b>Nescafe cold blend coffee glass</b></h2>
+                    <h3><span style="color: green;"> Rs 650</span></h3>
+
+                   <button>Add to cart</button>
+                    
+                </div>
+                </a>
+            </div>
+
+            <div class="p1"> <!-- inner div for product 2 -->
+                <a href="/product/pdescriptionNutella.html">
+
+                <img src="/product/product2.jpg" width="250px" style="background-color: antiquewhite;">
+                <div class="des">
+
+                    <h3>Nutella</h3>
+                    <h2><b> 100% pure Peanut butter </b></h2>
+                    
+                    <br>
+                    <h3><span style="color: green;"> NRP 470 per 500 grams</span></h3>
+                    
+                    
+                    <button>Add to cart</button>
+
+                </div>
+                </a>
+            </div>
+            
+
+            <div class="p1"> <!-- inner div for product 3 -->
+                <a href="/product/pdescriptionEggs.html">
+
+                <img src="/product/product3.webp" width="305px" style="background-color: antiquewhite;">
+                <div class="des">
+
+                    <h3>Eggs</h3>
+                    <h2><b>Eggs directly from farm</b></h2>
+                    
+                    
+                    <br>
+                    <h3><span style="color: green;"> NRP 420 per 30 pieces</span></h3>
+                    
+                    
+                    <button>Add to cart</button>
+
+                </div>
+                </a>
+            </div>
+
+            <div class="p1"> <!-- inner div for product 4 -->
+                <a href="/product/pdescription.html">
+
+                <img src="/product/product4.jpg" width="250px" style="background-color: antiquewhite;">
+                <div class="des">
+
+                    <h3> Dubar Honey </h3>
+                    <h2><b>Sweet & healthy </b></h2>
+                    
+                    <h3><span style="color: green;"> NRP 250</span></h3>
+                    <br>
+                    <button>Add to cart</button>
+
+                </div>
+                </a>
+            </div>
+            <div class="p1"> <!-- inner div for product 5 -->
+                <a href="/product/pdescription.html">
+
+                <img src="/product/product5.jpg" width="217px" style="background-color: antiquewhite;">
+                <div class="des">
+
+                   <h3>Apple</h3>
+                    <h2><b> kashmiri apple</b></h2>
+                   
+                    
+                    <h3><span style="color: green;"> NRP 500 per kg</span></h3>
+                    <br>
+                     
+                    <button>Add to cart</button>
+                </div>
+
+            </div>
+            <div class="p1"> <!-- inner div for product 6 -->
+                <a href="/product/pdescription.html">
+                <img src="/product/product6.jpg" width="283px" style="background-color: antiquewhite;">
+                <div class="des">
+
+                    <h3>Papaya</h3>
+                    <h2><b>Fresh -ready to eat papaya</b></h2>
+
+                    
+                    <br>
+                    <h3><span style="color: green;"> NRP 100 per piece</span></h3>
+                    
+                   <button>Add to cart</button>
+                    
+                </div>
+                </a>
+
+            </div>
+            <div class="p1"> <!-- inner div for product 7 -->
+                <a href="pdescription.html">
+
+                <img src="/product/product7.jpg" width="125px" style="background-color: antiquewhite;">
+                <div class="des">
+
+                    <h3>Strawberry</h3>
+                    <h2><b>Naturally grown grand berries</b></h2>
+
+                    <br>
+                    <h3><span style="color: green;"> NRP 650 per kg</span></h3>
+                    
+                    <button>Add to cart</button>
+                    
+                </div>
+                </a>
+            </div>
+            <div class="p1"> <!-- inner div for product 8 -->
+                <a href="pdescription.html">
+
+                <img src="/product/product8.webp" width="300px" style="background-color: antiquewhite;">
+                <div class="des">
+
+                    <h3>Kiwi</h3>
+                    <h2><b>Sweet and juicy </b></h2>
+
+                    <br>
+                    <h3><span style="color: green;"> NRP 1000</span></h3>
+                    
+                    <button>Add to cart</button>
+                    
+                </div>
+                </a>
+            </div>
+            <div class="p1"> <!-- inner div for product 9 -->
+                <a href="pdescription.html">    
+
+                <img src="/product/product9.jpg" width="300px" style="background-color: antiquewhite;">
+                <div class="des">
+
+                    <h3>Cucumber</h3>
+                    <h2><b>Fresh and healthy</b></h2>
+
+                    <br>
+                    <h3><span style="color: green;"> NRP 200 per kg</span></h3>
+                    
+                  <button>Add to cart</button>
+                    
+                </div>
+                </a>
+            </div>
+           
+            <div class="p1"> <!-- inner div for product 10 -->
+                <a href="pdescription.html">
+
+                <img src="/product/product10.jpeg" width="300px" style="background-color: antiquewhite;">
+                <div class="des">
+
+                    <h3>Tomato</h3>
+                    <h2><b>Red, fresh, chemical free totato</b></h2>
+
+                   <br>
+                    <h3><span style="color: green;"> NRP 200 per kg</span></h3>
+                    
+                  <button>Add to cart</button>
+                    
+                </div>
+                </a>
+            </div>
+            <div class="p1"> <!-- inner div for product 11 -->
+                <a href="pdescription.html">
+
+                <img src="/product/product11.jpg" width="263px" style="background-color: antiquewhite;">
+                <div class="des">
+
+                    <h3>Cabage</h3>
+                    <h2><b>Fresh and Chemical free </b></h2>
+
+                    <br>
+                    <h3><span style="color: green;"> NRP 100 per kg</span></h3>
+                    
+                    <button>Add to cart</button>
+                    
+                </div>
+                </a>
+            </div>
+            <div class="p1"> <!-- inner div for product 12 -->
+                <a href="pdescription.html">
+
+                <img src="/product/product12.jpg" width="325px" style="background-color: antiquewhite;">
+                <div class="des">
+
+                    <h3> Bringle</h3>
+                    <h2><b>fresh healthy and tasty</b></h2>
+
+                    <br>
+                    <h3><span style="color: green;"> NRP 100 per kg</span></h3>
+                    
+                    <button>Add to cart</button>
+                    
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="banner" style="margin: 50px 0px;">
+    <h4 style="font-size: x-large;"> <span style="color: brown;">Discount Offer</span> </h4>
+    <br>
+    <h1 style="font-size: xx-large;">UP to <span style="color: brown;">20%</span> OFF - ALL fresh vegetables</h1>
+     <br>
+    
+    </section>
+        <!-- Footer section -->
+        <footer>
+            <div class="logo">
+                <img id="icon" src="/images/home.jpg" width="8%" height="5%" class="logo" alt="">
+            </div>
+            <div class="last">
+                <!-- Contact details -->
+                <div class="details">
+                    <p><strong>Address:</strong>+P97, Lainchaur Marg 26,</p>
+                    <p>Kathmandu 44600, Nepal</p>
+                    <br>
+                    <p>
+    
+                <strong>Phone:</strong>(01) 420 271</p>
+              <br>
+              <p><strong>Email:</strong>groceriesnepal@gmail.com</p>
+            </div>
+            <div class="d2">
+                <h4 style="font-size: large;">Details</h4>
+                
+                <a href="/pages/about.html">About us </a>
+                <a href="/pages/product.html">Our products </a>
+                <a href="/pages/blog.html"> Blog </a>
+                <a href="/pages/research.html">Research page </a>
+            </div>
+            <div class="column2">
+                <h4>Privacy</h4>
+                <h4>Terms</h4>
+                <h4>FAQs</h4>
+                <h4>Security</h4>
+                <h4>Mobile</h4>
+                <h4>Contact</h4>
+              </div>
+              <div class="column3">
+                <h4>Partner</h4>
+                <h4>Seller</h4>
+                <h4>Warehouse</h4>
+                <h4>Deliver</h4>
+                <h4>Resources</h4>
+                <h4>Express</h4>
+              </div>
+              <div class="column4">
+                <h2 style="color: blueviolet;">Stay connected</h2>
+                <p>Facebook:groceriesNepal</p>
+                <p>Instagram:groceries_NEPAL</p>
+              </div>
+    
+        </div>
+        </footer>
+    
+        
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Megha Aryal">
+    <meta name="description" content="Home Page">
+    <!-- Title -->
+    <title>Home</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- External JavaScript with defer attribute -->
+    <script src="/js/script.js" defer></script>
+    <style>
+        /* Statement section styles */
+        #statement {
+            padding: 8%;
+            text-align: center;
+            background-image: url("/images/pic.jpg");
+            height: 80vh;
+            width: 100%;
+            background-size: cover;
+        }
+
+        /* Search styles */
+        #search {
+            font-weight: bold;
+            font-size: 20px; 
+        }
+
+        /* Service section styles */
+        #service h1 {
+            text-align: center;
+        }
+
+        #service table {
+            border-spacing: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #service figcaption {
+            font-size: larger;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            line-height: 2%;
+            border-radius: 6%;
+            color: black;
+            background-color: wheat;
+        }
+
+        /* Product section styles */
+        #product {
+            text-align: center;
+        }
+
+        #product .p1 {
+            width: 24%;
+            max-width: 25%;
+            border: 4px solid wheat;
+            margin: 10px 0;
+            border-radius: 25px;
+        }
+
+        .procontainer {
+            height: 50%;
+            width: 100%;
+            left: 0%;
+        }
+
+        #product .des {
+            text-align: center;
+            font-size: small;
+        }
+
+        .procontainer {
+            display: flex;
+            justify-content: space-between;
+        
+            flex-wrap: wrap;
+        }
+
+        /* Banner section styles */
+        #banner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background-image: url(/images/banner.jpg);
+            width: 100%;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Button styles */
+        button {
+            font-size: 14px;
+            font-weight: 500;
+            padding: 5px 8px;
+            color: white;
+            background-color: brown;
+            border-radius: 3px;
+            cursor: pointer;
+            border: 1px;
+            outline: auto;
+        }
+
+        button:hover {
+            background: green;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Header section -->
+    <section id="header">
+        <!-- Logo -->
+        <a href="#"><img src="/images/home.jpg" width="20%" height="20%" class="logo" alt=""></a>
+        <!-- Navigation -->
+        <div>
+            <ul id="navbar">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/product.html">Product</a></li>
+                <li><a href="/pages/blog.html">Blog</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/research.html">Research</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Statement section -->
+    <section id="statement">
+        <h4 style="margin: 1%;">your comfort is our business</h4>
+        <h2 style="margin: 1%;">We Bring the</h2>
+        <h1><span style="color:green;">Store to your door</span></h1>
+        <p style="margin: 2%;">NOW! GET 25% OFF ON ALL ITEM</p>
+        <a href="/pages/product.html"><button>Shop Now</button></a>
+    </section>
+    <!-- Service section -->
+    <section id="service" style="padding: 40px 70px;">
+        <h1><span style="color: brown; font-size: 40px;">OUR SERVICES</span></h1>
+        <br><br>
+        <table style="background-color: #e0ffcd">
+            <tr>
+                <!-- Service 1 -->
+                <td><img src="/images/image.png" width="250px" height="200px" alt="">
+                    <figcaption><b>Home delivery</b></figcaption>
+                </td>
+                <!-- Service 2 -->
+                <td><img src="/images/iamge2.png" width="250px" height="200px" alt="">
+                    <figcaption><b>Online Order</b></figcaption>
+                </td>
+                <!-- Service 3 -->
+                <td><img src="/images/i3.png" width="250px" height="200px" alt="">
+                    <figcaption><b>Customer service</b></figcaption>
+                </td>
+                <!-- Service 4 -->
+                <td><img src="/images/i4.png" width="250px" height="200px" alt="">
+                    <figcaption><b>Save Money</b></figcaption>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <!-- Product section -->
+    <section id="product">
+        <h1><span style="color: brown;font-size: 48px;">Featured product</span></h1>
+        <br>
+        <!-- <p>Quality food at affordable prices.</p> -->
+        <div class="procontainer">
+            <!-- Product 1 -->
+            <div class="p1">
+                <img src="/images/p1.png" width="100px" style="background-color: antiquewhite;">
+                <div class="des">
+                    <h3>Nescafe</h3>
+                    <h2><b>Nescafe cold blend coffee glass</b></h2>
+                    <p>Flavourful and 100% pure coffee that is perfect for any time of the day.<br>The contents into an airtight container to ensure lasting freshness.</p><br>
+                    <h3><span style="color: green;"> NRP 650</span></h3>
+                    <a href="/pages/product.html"><button>Add to cart</button></a>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="p1">
+                <img src="/images/i5.png" width="200px" style="background-color: antiquewhite;">
+                <div class="des">
+                    <h3>Apples</h3>
+                    <h2><b>Red fresh apples</b></h2>
+                    <p>Rich in vitamin C and dietary fiber which keep our digestive and immune system healthy.<br>Store them in a cool, dry place away from direct sunlight.</p><br>
+                    <h3><span style="color: green;"> NRP 350 per kg</span></h3>
+                    <a href="/pages/product.html"><button>Add to cart</button></a>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="p1">
+                <img src="/images/i6.jpg" width="200px" style="background-color: antiquewhite;">
+                <div class="des">
+                    <h3>Eggs</h3>
+                    <h2><b>Brown eggs</b></h2>
+                    <p>Whole eggs are a complete protein, meaning they contain all the necessary amino acids.</p><br><br>
+                    <h3><span style="color: green;"> NRP 250</span></h3><br>
+                    <a href="/pages/product.html"><button>Add to cart</button></a>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="p1">
+                <img src="/images/i7.png" width="200px" style="background-color: antiquewhite;">
+                <div class="des">
+                    <h2><b>Cucumber local,1 Kg</b></h2>
+                    <p>Fresh cucumber straight from farm rich in vitamin K,B and C.</p>
+                    <h3><span style="color: green;"> NRP 150</span></h3><br>
+                    <a href="/pages/product.html"><button>Add to cart</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner section -->
+    <section id="banner" style="margin: 4px 0px;">
+        <h4 style="font-size: 58px;"><span style="color: brown;">Discount Offer</span></h4>
+        <br>
+        <h1 style="font-size: xx-large;">UP to <span style="color: brown;">20%</span> OFF - ALL fresh vegetables</h1>
+        <br>
+        <a href="/pages/product.html"><button>Explore more</button></a>
+    </section>
+    <!-- Footer section -->
+    <footer>
+        <div class="logo">
+            <img id="icon" src="/images/home.jpg" width="8%" height="5%" class="logo" alt="">
+        </div>
+    <div class="last">
+            <!-- Contact details -->
+        <div class="details">
+                <p><strong>Address:</strong>+P97, Lainchaur Marg 26,</p>
+                <p>Kathmandu 44600, Nepal</p>
+                <br>
+                <p>
+
+            <strong>Phone:</strong>(01) 420 271</p>
+          <br>
+          <p><strong>Email:</strong>groceriesnepal@gmail.com</p>
+        </div>
+        <div class="d2">
+            <h4 style="font-size: large;">Details</h4>
+            
+            <a href="/pages/about.html">About us </a>
+            <a href="/pages/product.html">Our products </a>
+            <a href="/pages/blog.html"> Blog </a>
+            <a href="/pages/research.html">Research page </a>
+        </div>
+        <div class="column2">
+            <h4>Privacy</h4>
+            <h4>Terms</h4>
+            <h4>FAQs</h4>
+            <h4>Security</h4>
+            <h4>Mobile</h4>
+            <h4>Contact</h4>
+          </div>
+          <div class="column3">
+            <h4>Partner</h4>
+            <h4>Seller</h4>
+            <h4>Warehouse</h4>
+            <h4>Deliver</h4>
+            <h4>Resources</h4>
+            <h4>Express</h4>
+          </div>
+          <div class="column4">
+            <h2 style="color: blueviolet;">Stay connected</h2>
+            <p>Facebook:groceriesNepal</p>
+            <p>Instagram:groceries_NEPAL</p>
+          </div>
+    </div>
+    </footer>
+     
+ </body>
+</html>
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
